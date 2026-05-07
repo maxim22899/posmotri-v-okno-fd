@@ -120,6 +120,8 @@ html {
 .content__card-link {
   text-decoration: none;
   color: #fff;
+  display: block;
+  cursor: pointer;
 }
 .content__video-card-title {
   height: 38px;
@@ -148,6 +150,7 @@ html {
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   overflow: hidden;
+  min-height: 20px;
 }
 .visually-hidden {
   position: absolute;
@@ -171,7 +174,6 @@ html {
   width: fit-content;
   cursor: pointer;
   gap: 5px;
-  width: fit-content;
 }
 
 .search-form__textfield {
@@ -254,10 +256,7 @@ button:hover {
   background-color: #545050;
 }
 
-.content__card-link {
-  display: block;
-  cursor: pointer;
-}
+
 
 .content__card-link_current {
   background-color: #545050;
@@ -273,9 +272,7 @@ button:hover {
   text-decoration-thickness: 2px;
 }
 
-.content__video-card-description {
-  min-height: 20px;
-}
+
 
 .content__card-link:focus {
   outline: none;
