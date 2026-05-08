@@ -251,8 +251,6 @@ button:hover {
   background-color: #545050;
 }
 
-
-
 .content__card-link_current {
   background-color: #545050;
 }
@@ -263,18 +261,17 @@ button:hover {
 
 .content__card-link:hover .content__video-card-title,
 .content__card-link:hover .content__video-card-description {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .content__card-link:hover .content__video-card-title {
-  text-underline-offset:5px;
-  text-decoration-thickness:1.5px;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1.5px;
 }
 
 .content__card-link:hover .content__video-card-description {
   text-underline-offset: 4px;
   text-decoration-thickness: 1px;
 }
-
 
 .content__card-link:focus {
   outline: none;
