@@ -104,7 +104,7 @@ html {
 
 .content__video-card-description-container {
   display: flex;
-  gap: 4px;
+  gap: px;
   flex-direction: column;
   width: 190px;
   flex-grow: 1;
@@ -121,6 +121,7 @@ html {
   cursor: pointer;
 }
 .content__video-card-title {
+  padding-bottom: 5px;
   font-family: "Oswald", sans-serif;
   font-size: 30px;
   line-height: 100%;
@@ -142,6 +143,7 @@ html {
   color: #545050;
 }
 .content__video-card-description {
+  padding-bottom: 3px;
   line-height: 16.2px;
   display: -webkit-box;
   -webkit-line-clamp: 4;
@@ -225,13 +227,12 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
+  min-height: 34px;
 }
 
 .search-form__submit-button {
   align-self: flex-end;
   width: 194px;
-  min-height: 34px;
-
 }
 
 .more-button {
@@ -260,12 +261,19 @@ button:hover {
   background-color: #545050;
 }
 
-.content__card-link:hover {
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  text-decoration-thickness: 2px;
+.content__card-link:hover .content__video-card-title,
+.content__card-link:hover .content__video-card-description {
+    text-decoration: underline;
+}
+.content__card-link:hover .content__video-card-title {
+  text-underline-offset:5px;
+  text-decoration-thickness:1.5px;
 }
 
+.content__card-link:hover .content__video-card-description {
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
 
 
 .content__card-link:focus {
